@@ -16,6 +16,9 @@ class MyTableViewCell: UITableViewCell {
     
     @IBOutlet weak var message: UILabel!
     
+    @IBOutlet weak var starsRating = FloatRatingView()
+    
+ 
     
     
     

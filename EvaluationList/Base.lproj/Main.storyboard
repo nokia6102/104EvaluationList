@@ -44,26 +44,6 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_star_orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="uwy-J8-SfI">
-                                                    <rect key="frame" x="138" y="45" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_star_orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="htZ-f4-txs">
-                                                    <rect key="frame" x="166" y="45" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_star_orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="z6q-HD-3bv">
-                                                    <rect key="frame" x="194" y="45" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_star_half.png" translatesAutoresizingMaskIntoConstraints="NO" id="N0K-gl-MBN">
-                                                    <rect key="frame" x="222" y="45" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_star_outline.png" translatesAutoresizingMaskIntoConstraints="NO" id="FUM-JX-qpq">
-                                                    <rect key="frame" x="250" y="45" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="十分愉快的交談過程，對於工作內容及公司的介紹都十分清楚，對專業..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4k-CE-Zn9">
                                                     <rect key="frame" x="138" y="74" width="255" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,12 +51,33 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3L-a3-LBw" customClass="FloatRatingView" customModule="EvaluationList" customModuleProvider="target">
+                                                    <rect key="frame" x="138" y="45" width="132" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="icon_star_outline.png"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="icon_star_orange.png"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="1.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="avatar" destination="VIo-Nx-0pL" id="53L-NM-qOw"/>
                                             <outlet property="message" destination="b4k-CE-Zn9" id="j08-cx-xjW"/>
                                             <outlet property="name" destination="ACO-9q-fPb" id="L1h-2Q-pXZ"/>
+                                            <outlet property="starsRating" destination="s3L-a3-LBw" id="Spc-2d-J0W"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -91,12 +92,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wV4-js-ibz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245" y="94"/>
+            <point key="canvasLocation" x="2243.4782608695655" y="93.750000000000014"/>
         </scene>
     </scenes>
     <resources>
         <image name="aventa_c.png" width="150" height="150"/>
-        <image name="icon_star_half.png" width="59" height="54"/>
         <image name="icon_star_orange.png" width="59" height="54"/>
         <image name="icon_star_outline.png" width="59" height="54"/>
     </resources>
