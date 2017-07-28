@@ -36,21 +36,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             for child in snapshot.children
             {
                 let Value:DataSnapshot = child as! DataSnapshot
-                print ( "> \(Value.value!)" )
+//                print ( "> \(Value.value!)" )
                 let  myValue = Value.value!
                 
                 if let dictionary  = myValue as? [String : Any]
                 {
                      self.arrTable.append(dictionary)
                     
-                    if let description = dictionary["Description"] as? String
-                    {
-                        print("1.Description: \(description)")
-                    }
-                    if let stars = dictionary["stars"] as? Float
-                    {
-                        print("2.stars: \(stars)")
-                    }
+//                    if let description = dictionary["Description"] as? String
+//                    {
+//                        print("1.Description: \(description)")
+//                    }
+//                    if let stars = dictionary["stars"] as? Float
+//                    {
+//                        print("2.stars: \(stars)")
+//                    }
                 }
                 
             }
