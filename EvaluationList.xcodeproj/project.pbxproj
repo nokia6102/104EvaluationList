@@ -12,6 +12,12 @@
 		084B06341F24E2DD00B88ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084B06321F24E2DD00B88ACC /* Main.storyboard */; };
 		084B06361F24E2DD00B88ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084B06351F24E2DD00B88ACC /* Assets.xcassets */; };
 		084B06391F24E2DD00B88ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084B06371F24E2DD00B88ACC /* LaunchScreen.storyboard */; };
+		084B06411F24E39C00B88ACC /* aventa.png in Resources */ = {isa = PBXBuildFile; fileRef = 084B06401F24E39C00B88ACC /* aventa.png */; };
+		084B06431F24E41400B88ACC /* aventa_c.png in Resources */ = {isa = PBXBuildFile; fileRef = 084B06421F24E41400B88ACC /* aventa_c.png */; };
+		084B06451F24E45300B88ACC /* icon_star_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 084B06441F24E45300B88ACC /* icon_star_orange.png */; };
+		084B06471F24E45B00B88ACC /* icon_star_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 084B06461F24E45B00B88ACC /* icon_star_half.png */; };
+		084B06491F24E46400B88ACC /* icon_star_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 084B06481F24E46400B88ACC /* icon_star_outline.png */; };
+		5AE8E4581F2B0BE2003EFB3A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8E4571F2B0BE2003EFB3A /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		084B06351F24E2DD00B88ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084B06381F24E2DD00B88ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084B063A1F24E2DD00B88ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084B06401F24E39C00B88ACC /* aventa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aventa.png; sourceTree = "<group>"; };
+		084B06421F24E41400B88ACC /* aventa_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aventa_c.png; sourceTree = "<group>"; };
+		084B06441F24E45300B88ACC /* icon_star_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_orange.png; sourceTree = "<group>"; };
+		084B06461F24E45B00B88ACC /* icon_star_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_half.png; sourceTree = "<group>"; };
+		084B06481F24E46400B88ACC /* icon_star_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_outline.png; sourceTree = "<group>"; };
+		5AE8E4571F2B0BE2003EFB3A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +66,14 @@
 		084B062D1F24E2DD00B88ACC /* EvaluationList */ = {
 			isa = PBXGroup;
 			children = (
+				084B06481F24E46400B88ACC /* icon_star_outline.png */,
+				084B06461F24E45B00B88ACC /* icon_star_half.png */,
+				084B06441F24E45300B88ACC /* icon_star_orange.png */,
+				084B06421F24E41400B88ACC /* aventa_c.png */,
+				084B06401F24E39C00B88ACC /* aventa.png */,
 				084B062E1F24E2DD00B88ACC /* AppDelegate.swift */,
 				084B06301F24E2DD00B88ACC /* ViewController.swift */,
+				5AE8E4571F2B0BE2003EFB3A /* MyTableViewCell.swift */,
 				084B06321F24E2DD00B88ACC /* Main.storyboard */,
 				084B06351F24E2DD00B88ACC /* Assets.xcassets */,
 				084B06371F24E2DD00B88ACC /* LaunchScreen.storyboard */,
@@ -123,9 +141,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084B06451F24E45300B88ACC /* icon_star_orange.png in Resources */,
+				084B06491F24E46400B88ACC /* icon_star_outline.png in Resources */,
+				084B06471F24E45B00B88ACC /* icon_star_half.png in Resources */,
+				084B06411F24E39C00B88ACC /* aventa.png in Resources */,
 				084B06391F24E2DD00B88ACC /* LaunchScreen.storyboard in Resources */,
 				084B06361F24E2DD00B88ACC /* Assets.xcassets in Resources */,
 				084B06341F24E2DD00B88ACC /* Main.storyboard in Resources */,
+				084B06431F24E41400B88ACC /* aventa_c.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +161,7 @@
 			files = (
 				084B06311F24E2DD00B88ACC /* ViewController.swift in Sources */,
 				084B062F1F24E2DD00B88ACC /* AppDelegate.swift in Sources */,
+				5AE8E4581F2B0BE2003EFB3A /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EvaluationList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = leo.EvaluationList;
+				PRODUCT_BUNDLE_IDENTIFIER = unision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EvaluationList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = leo.EvaluationList;
+				PRODUCT_BUNDLE_IDENTIFIER = unision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +325,7 @@
 				084B063F1F24E2DD00B88ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
