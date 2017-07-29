@@ -79,6 +79,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.starsRating?.rating = arrTable[indexPath.row]["stars"] as! Float
         cell.message.text = arrTable[indexPath.row]["Description"] as? String
         cell.name.text = arrTable[indexPath.row]["uid"] as? String
+      
+       let formatTime = arrTable[indexPath.row]["timestamp"] as! Int
+      
+          let date = NSDate(timeIntervalSince1970: TimeInterval(formatTime/1000))
+      
+          let dayTimePeriodFormatter = DateFormatter()
+          dayTimePeriodFormatter.dateFormat = "yyyy/MM/dd hh:mm"
+          
+          let dateString = dayTimePeriodFormatter.string(from: date as Date)
+      
+      
+        cell.timestamp.text = dateString
+      
+      
+        let companyName = "華碩電腦"
+        cell.companyName.text = companyName
+      
         return cell
     }
     

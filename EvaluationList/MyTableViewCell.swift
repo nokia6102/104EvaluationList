@@ -9,6 +9,9 @@
 import UIKit
 
 class MyTableViewCell: UITableViewCell {
+    @IBOutlet weak var timestamp: UILabel!
+  
+   @IBOutlet weak var companyName: UILabel!
 
     @IBOutlet weak var avatar: UIImageView!
     
